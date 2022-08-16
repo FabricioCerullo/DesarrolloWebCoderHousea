@@ -12,7 +12,6 @@ html {
 .botones_info{
     margin: 20px;
     display: inline-block;
-    text-align: right;
 }
 
 header{
@@ -20,10 +19,9 @@ header{
 }
 
 footer{
-    background-color:#89909F;
-    padding: 80px;
+    background-color: azure;
+    padding: 50px;
     text-align: center;
-    margin : 20px;
 }
 
 ul {
@@ -32,7 +30,6 @@ ul {
   
   li {
     float: left;
-    text-align: center;
   }
  
 /*---------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -46,7 +43,7 @@ ul {
 
 .promo {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto;
     background-color: aliceblue;
 }
 
@@ -56,30 +53,6 @@ ul {
     text-align: center;
 }
 
-.section_category{
-    display:flex;
-    background-color: #A6ECE0;
-    padding : 30px;
-    border: 2px solid black;
-    flex-direction: row;
-    justify-content: center;
-    margin : 20px;
- 
-}
-
-.categorias_cuadro{
-    background-color : antiquewhite;
-    width: 200px;
-    margin: 20px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 20px;
-    border: 2px solid black;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    animation-name: animacion_cuadro;
-    animation-duration: 2s;
-}
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*DISEÑO PAGINAS*/
@@ -163,25 +136,48 @@ ul {
 }
 
 
-
-
 /*---------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 745px){
+@media screen and (min-width: 320px) and (max-width:599px){
+    .promo {
+        grid-template-columns:auto auto ;
+    }
+
+    .about__text {
+        font-size: 10px;
+    }
+
+    .promo__img {
+        max-width: 80px;
+        max-width: 80px;
+    }
+
+    .promo__title{
+        font-size: 15px;
+    }
+
+    .link__mate{
+        max-width: 20px;
+        max-width: 20px;
+    }
+
+
+}
+
+@media screen and (min-width: 600px) and (max-width:799px){
     .promo {
         grid-template-columns:auto;
     }
 
 }
 
-@media screen and (max-width: 1024px){
-    .promo {
-        grid-template-columns:auto;
+@media screen and (min-width: 768px) and (max-width:1023px){
+    .promo{
+        grid-template-columns: auto ;
     }
-
 }
 
-@media  screen and (max-width: 1460px){
+@media screen and (max-width: 1024px) {
     .promo{
         grid-template-columns: auto auto;
     }
@@ -196,7 +192,6 @@ ul {
         transform: translateY(-20%) translate(20%)
     }
 }
-
 
 
 
