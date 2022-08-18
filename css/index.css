@@ -36,14 +36,14 @@ ul {
 /*Diseño INICIO*/
 
 .promo__title{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: italic;
     text-align: center;
     font-size: 50px;
 }
 
 .promo {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     background-color: aliceblue;
 }
 
@@ -93,6 +93,11 @@ ul {
     padding-bottom: 500px;
 }
 
+.parrafo__tMate{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:40px;
+}
+
 /*---------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*Diseños PAGINAS - TERMOS*/
 
@@ -137,19 +142,88 @@ ul {
 
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*Media Queries Index-Inicio
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-@media screen and (min-width: 320px) and (max-width:599px){
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .promo {
-        grid-template-columns:auto auto ;
+        grid-template-columns:auto auto auto auto;
     }
 
     .about__text {
-        font-size: 10px;
+        font-size: 30px;
+    }
+
+    .promo__img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .promo__title{
+        font-size: 35px;
+    }
+
+    .link__mate{
+        max-width: 20px;
+        max-width: 20px;
+    }
+
+    footer{
+        background-color: azure;
+        padding: 50px;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .promo {
+        grid-template-columns:auto auto;
+    }
+
+    .about__text {
+        font-size: 30px;
+    }
+
+    .promo__img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .promo__title{
+        font-size: 30px;
+    }
+
+    .link__mate{
+        max-width: 20px;
+        max-width: 20px;
+    }
+
+    footer{
+        background-color: azure;
+        padding: 50px;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width:320px) {
+    .promo {
+        grid-template-columns:auto auto;
+    }
+
+    .about__text {
+        font-size: 20px;
     }
 
     .promo__img {
         max-width: 80px;
-        max-width: 80px;
+        max-height: 80px;
     }
 
     .promo__title{
@@ -161,27 +235,103 @@ ul {
         max-width: 20px;
     }
 
-
+    footer{
+        background-color: azure;
+        padding: 50px;
+        text-align: center;
+        font-size: 15px;
+    }
+    
 }
 
-@media screen and (min-width: 600px) and (max-width:799px){
-    .promo {
-        grid-template-columns:auto;
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*Media Queries pag-Mates
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    #portada_pagMates{
+        background-image: url(https://www.quieromate.com.ar/wp-content/uploads/2019/05/Tipos-de-Mates-1200x667.jpg); 
+        background-size: cover;
+        padding-bottom: 300px;
+    }
+    
+    .parrafo__tMate{
+        font-family: 'Times New Roman', Times, serif;
+        font-size:25px;
     }
 
-}
+    .img_mat{
+        max-width:200px;
+        max-height: 200px;
+    }
 
-@media screen and (min-width: 768px) and (max-width:1023px){
-    .promo{
-        grid-template-columns: auto ;
+    .text_mate{
+        max-width:500px;
+        max-height: 300px;
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .promo{
-        grid-template-columns: auto auto;
+
+
+@media screen and (max-width: 768px) {
+    #portada_pagMates{
+        background-image: url(https://www.quieromate.com.ar/wp-content/uploads/2019/05/Tipos-de-Mates-1200x667.jpg); 
+        background-size: cover;
+        padding-bottom: 200px;
+    }
+    
+    .parrafo__tMate{
+        font-family: 'Times New Roman', Times, serif;
+        font-size:17px;
+    }
+
+    .title__pagMates{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        text-align: center;
+        margin-top : 0px;
+    }
+
+    .img_mat{
+        max-width:150px;
+        max-height: 150px;
+    }
+    .text_mate{
+        max-width:300px;
+        max-height: 400px;
     }
 }
+
+@media screen and (max-width:320px) {
+    #portada_pagMates{
+        background-image: url(https://www.quieromate.com.ar/wp-content/uploads/2019/05/Tipos-de-Mates-1200x667.jpg); 
+        background-size: cover;
+        padding-bottom: 100px;
+    }
+
+    .title__pagMates{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        text-align: center;
+        margin-top : 0px;
+    }
+    
+    .img_mat{
+        max-width:120px;
+        max-height: 120px;
+    }
+
+    .text_mate{
+        max-width:200px;
+        max-height: 200px;
+        font-size: 10px;
+    }
+  
+}
+
+
+
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------*/
 @keyframes animacion_cuadro{
