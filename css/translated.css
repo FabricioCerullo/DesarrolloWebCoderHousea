@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/*--------///MISC///----------------------------------------------------------------------------------------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  background-color: #FAFAFF; }
+
+ul {
+  list-style-type: none; }
+
+li {
+  float: left; }
+
+/*-------///PARTIALS///--------------------------------------------------------------------------------------------------------------------------------------------*/
+footer {
+  background-color: azure;
+  padding: 50px;
+  text-align: center; }
+
+header {
+  background-color: azure; }
+
+/*----------VIEWS-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*Diseño INICIO*/
+.promo__title {
+  font-family: italic;
+  text-align: center;
+  font-size: 50px; }
+
+.promo {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: aliceblue; }
+
+#pagPerfil {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-align: center; }
+  #pagPerfil .about {
+    background-color: #E1EFF6; }
+    #pagPerfil .about_title {
+      font: size 45px;
+      font-family: italic; }
+    #pagPerfil .about__text {
+      font-size: 25px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*DISEÑO PAGINAS*/
+/*Diseños Enlazados*/
+.parrafo__tMate {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  text-align: center; }
+
+.title__pagMates {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  text-align: center;
+  margin-top: 0px; }
+
+.botones {
+  margin: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Diseño PAGINAS - MATES*/
+#portada_pagMates {
+  background-image: url(https://www.quieromate.com.ar/wp-content/uploads/2019/05/Tipos-de-Mates-1200x667.jpg);
+  background-size: cover;
+  padding-bottom: 500px; }
+
+.parrafo__tMate {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px; }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Diseños PAGINAS - TERMOS*/
+#portada_pagTermos {
+  background-image: url(https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/CYW562AWOZAYHDADDZZNDIJ7LE.jpg);
+  padding-bottom: 500px; }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Diseños PAGINAS - BOMBILLAS*/
+#portada_pagBombillas {
+  background-image: url(https://inym.org.ar/imagenes/archivos/noticias/78748_listaImagenes-1_1088x650xrecortarxagrandar.jpg?random=1613667611);
+  padding-bottom: 400px; }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Diseños PAGINAS - COMBOS*/
+#portada_pagCombos {
+  background-image: url(http://d3ugyf2ht6aenh.cloudfront.net/stores/157/335/products/20200406_1520481-4a80313ae1360a0a4615878364452126-640-0.jpg);
+  padding-bottom: 500px; }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Diseños PAGINAS - CONTACTO*/
+.formulario {
+  border: 5px solid;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 10px; }
+
+.contact_title {
+  padding: 20px; }
+
+.boton__envio {
+  padding: 100px;
+  border-bottom: center; }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Media Queries Index-Inicio
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .promo {
+    grid-template-columns: auto auto auto auto; }
+  .about__text {
+    font-size: 30px; }
+  .promo__img {
+    max-width: 200px;
+    max-height: 200px; }
+  .promo__title {
+    font-size: 35px; }
+  .link__mate {
+    max-width: 20px;
+    max-width: 20px; }
+  footer {
+    background-color: azure;
+    padding: 50px;
+    text-align: center;
+    font-size: 15px; } }
+
+@media screen and (max-width: 768px) {
+  .promo {
+    grid-template-columns: auto auto; }
+  .about__text {
+    font-size: 30px; }
+  .promo__img {
+    max-width: 150px;
+    max-height: 150px; }
+  .promo__title {
+    font-size: 30px; }
+  .link__mate {
+    max-width: 20px;
+    max-width: 20px; }
+  footer {
+    background-color: azure;
+    padding: 50px;
+    text-align: center;
+    font-size: 15px; } }
+
+@media screen and (max-width: 320px) {
+  .promo {
+    grid-template-columns: auto auto; }
+  .about__text {
+    font-size: 20px; }
+  .promo__img {
+    max-width: 80px;
+    max-height: 80px; }
+  .promo__title {
+    font-size: 15px; }
+  .link__mate {
+    max-width: 20px;
+    max-width: 20px; }
+  footer {
+    background-color: azure;
+    padding: 50px;
+    text-align: center;
+    font-size: 15px; } }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Media Queries pag-Mates
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  #portada_pagMates {
+    background-image: url(https://www.quieromate.com.ar/wp-content/uploads/2019/05/Tipos-de-Mates-1200x667.jpg);
+    background-size: cover;
+    padding-bottom: 300px; }
+  .parrafo__tMate {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px; }
+  .img_mat {
+    max-width: 200px;
+    max-height: 200px; }
+  .text_mate {
+    max-width: 500px;
+    max-height: 300px; } }
+
+@media screen and (max-width: 768px) {
+  #portada_pagMates {
+    background-image: url(https://www.quieromate.com.ar/wp-content/uploads/2019/05/Tipos-de-Mates-1200x667.jpg);
+    background-size: cover;
+    padding-bottom: 200px; }
+  .parrafo__tMate {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px; }
+  .title__pagMates {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0px; }
+  .img_mat {
+    max-width: 150px;
+    max-height: 150px; }
+  .text_mate {
+    max-width: 300px;
+    max-height: 400px; } }
+
+@media screen and (max-width: 320px) {
+  #portada_pagMates {
+    background-image: url(https://www.quieromate.com.ar/wp-content/uploads/2019/05/Tipos-de-Mates-1200x667.jpg);
+    background-size: cover;
+    padding-bottom: 100px; }
+  .title__pagMates {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0px; }
+  .img_mat {
+    max-width: 120px;
+    max-height: 120px; }
+  .text_mate {
+    max-width: 200px;
+    max-height: 200px;
+    font-size: 10px; } }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+@keyframes animacion_cuadro {
+  0% {
+    transform: translate(); }
+  20% {
+    transform: translateY(-20%) translate(20%); } }
