@@ -1,0 +1,32 @@
+/*Diseño INICIO*/
+
+.promo__title{
+    font-family: italic;
+    text-align: center;
+    font-size: 50px;
+}
+
+.promo {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: aliceblue;
+}
+
+#pagPerfil {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+
+    .about{
+        background-color: #E1EFF6;
+    
+        &_title{
+            font: size 45px;
+            font-family: italic;
+        };
+        &__text{
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    }
+}
