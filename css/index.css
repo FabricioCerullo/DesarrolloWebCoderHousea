@@ -9,11 +9,6 @@ html {
     background-color: #FAFAFF;
 }
 
-.botones_info{
-    margin: 20px;
-    display: inline-block;
-}
-
 header{
     background-color: azure;
 }
@@ -77,11 +72,6 @@ ul {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.categorias_bot{
-    margin: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*Diseño PAGINAS - MATES*/
