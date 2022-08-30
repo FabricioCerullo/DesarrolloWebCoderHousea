@@ -1,0 +1,93 @@
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Diseño PAGINAS - MATES*/
+
+
+
+#portada_pagMates{
+    background-image: url(https://www.quieromate.com.ar/wp-content/uploads/2019/05/Tipos-de-Mates-1200x667.jpg); 
+    @extend .portadas;
+}
+
+.botonMate{
+    @extend .btn-primary;
+    background-color: #212227; 
+    .nombre_mate{
+        color: #fff;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    #portada_pagMates{
+        background-image: url(https://www.quieromate.com.ar/wp-content/uploads/2019/05/Tipos-de-Mates-1200x667.jpg); 
+        background-size: cover;
+        padding-bottom: 300px;
+    }
+    
+    .parrafo__tMate{
+        font-family: 'Times New Roman', Times, serif;
+        font-size:25px;
+    }
+
+    .img_mat{
+        max-width:200px;
+        max-height: 200px;
+    }
+
+    .text_mate{
+        max-width:500px;
+        max-height: 300px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #portada_pagMates{
+        background-image: url(https://www.quieromate.com.ar/wp-content/uploads/2019/05/Tipos-de-Mates-1200x667.jpg); 
+        background-size: cover;
+        padding-bottom: 200px;
+    }
+    
+    .parrafo__tMate{
+        font-family: 'Times New Roman', Times, serif;
+        font-size:17px;
+    }
+
+    .title__pagMates{
+        @include title_pag;
+    }
+
+    .img_mat{
+        max-width:150px;
+        max-height: 150px;
+    }
+    .text_mate{
+        max-width:300px;
+        max-height: 400px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    #portada_pagMates{
+        background-image: url(https://www.quieromate.com.ar/wp-content/uploads/2019/05/Tipos-de-Mates-1200x667.jpg); 
+        background-size: cover;
+        padding-bottom: 100px;
+    }
+
+    .title__pagMates{
+        @include title_pag;
+    }
+    
+    .img_mat{
+        max-width:120px;
+        max-height: 120px;
+    }
+
+    .text_mate{
+        max-width:200px;
+        max-height: 200px;
+        font-size: 10px;
+    }
+  
+}
+
