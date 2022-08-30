@@ -1,32 +1,122 @@
 /*Diseño INICIO*/
-
 .promo__title{
     font-family: italic;
     text-align: center;
-    font-size: 50px;
+    font-size: map-get($fuentes, n8);
 }
+
 
 .promo {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    background-color: aliceblue;
+    background-color: #130303;
+    border-radius: 70px;
 }
 
 #pagPerfil {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: map-get($fuentes, n5);
     text-align: center;
 
     .about{
-        background-color: #E1EFF6;
+        background-color: #465775;
     
         &_title{
-            font: size 45px;
+            font-size: map-get($fuentes, n10);
             font-family: italic;
         };
         &__text{
-            font-size: 25px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: map-get($fuentes, n5);
+            font-family: cursive;
         }
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .promo {
+        grid-template-columns:auto auto auto auto;
+    }
+
+    .about__text {
+        font-size: map-get($fuentes, n4);
+    }
+
+    .promo__img {
+        max-width: map-get($fuentes, n10);
+        max-height: map-get($fuentes, n10);
+    }
+
+    .promo__title{
+        font-size: map-get($fuentes, n5);
+    }
+
+    .link__mate{
+        max-width: map-get($fuentes, n2);
+        max-width: map-get($fuentes, n2);
+    }
+
+    footer{
+        @include footer_mobile;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .promo {
+        grid-template-columns:auto auto;
+    }
+
+    .about__text {
+        font-size: map-get($fuentes, n4);
+    }
+
+    .promo__img {
+        max-width: map-get($fuentes, n9);
+        max-height: map-get($fuentes, n9);
+    }
+
+    .promo__title{
+        font-size: map-get($fuentes, n4);
+    }
+
+    .link__mate{
+        max-width: map-get($fuentes, n2);
+        max-width: map-get($fuentes, n2);
+    }
+
+    footer{
+        @include footer_mobile;
+    }
+    
+}
+
+@media screen and (max-width:320px) {
+    .promo {
+        grid-template-columns:auto auto;
+    }
+
+    .about__text {
+        font-size: map-get($fuentes, n2);
+    }
+
+    .promo__img {
+        max-width: map-get($fuentes, n7);
+        max-height: map-get($fuentes, n7);
+    }
+
+    .promo__title{
+        font-size: map-get($fuentes, n1);
+    }
+
+    .link__mate{
+        max-width: map-get($fuentes, n2);
+        max-width: map-get($fuentes, n2);
+    }
+
+    footer{
+        @include footer_mobile;
+    }
+    
 }
