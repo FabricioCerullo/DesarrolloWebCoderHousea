@@ -1,0 +1,45 @@
+$fuentes:(
+n0: 0px,
+n1:15px,
+n2: 20px,
+n3: 25px,
+n4: 30px,
+n5: 35px,
+n6: 50px,
+n7: 80px,
+n8: 100px,
+n9: 150px,
+n10: 200px,
+n11:300px,
+n12:400px,
+n13: 500px
+);
+
+.btn-primary{
+    border-radius: 70px;
+    .img_mat{
+        width:map-get($fuentes,n11);
+        height: map-get($fuentes,n11);
+    };
+}
+
+
+@mixin footer_mobile{
+    background-color: azure;
+    padding: map-get($fuentes, n6);
+    text-align: center;
+    font-size: map-get($fuentes, n1);
+}
+
+@mixin title_pag {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top : 0px;
+}
+
+.portadas{
+    background-size: cover;
+    padding-bottom: 500px;
+    border-radius: 200px
+}
