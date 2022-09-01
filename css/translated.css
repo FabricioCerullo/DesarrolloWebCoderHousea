@@ -28,9 +28,9 @@ li {
   text-align: center;
   margin-top: 0px; }
 
-.btn-primary, .botonMate {
+.btn-primary, .boton_bombilla, .boton_set, .botonMate, .boton_termo {
   border-radius: 70px; }
-  .btn-primary .img_mat, .botonMate .img_mat {
+  .btn-primary .img_mat, .boton_bombilla .img_mat, .boton_set .img_mat, .botonMate .img_mat, .boton_termo .img_mat {
     width: 300px;
     height: 300px; }
 
@@ -41,9 +41,10 @@ li {
 
 /*-------///PARTIALS///--------------------------------------------------------------------------------------------------------------------------------------------*/
 footer {
-  background-color: #0C0F0A;
+  background-color: white;
   padding: 50px;
-  text-align: center; }
+  text-align: center;
+  border-radius: 50px; }
 
 header {
   background-color: #341E3B; }
@@ -136,26 +137,138 @@ header {
 #portada_pagBombillas {
   background-image: url(https://inym.org.ar/imagenes/archivos/noticias/78748_listaImagenes-1_1088x650xrecortarxagrandar.jpg?random=1613667611); }
 
+.boton_bombilla {
+  background-color: #212227;
+  border-radius: 20px; }
+  .boton_bombilla .nombre_bomb {
+    color: #fff; }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  #portada_pagCombos {
+    background-image: url(http://d3ugyf2ht6aenh.cloudfront.net/stores/157/335/products/20200406_1520481-4a80313ae1360a0a4615878364452126-640-0.jpg);
+    background-size: cover;
+    padding-bottom: 300px; }
+  .img_bomb {
+    max-width: 200px;
+    max-height: 200px; }
+  .text_bomb {
+    max-width: 500px;
+    max-height: 300px; } }
+
+@media screen and (max-width: 768px) {
+  #portada_pagTermos {
+    background-image: url(http://d3ugyf2ht6aenh.cloudfront.net/stores/157/335/products/20200406_1520481-4a80313ae1360a0a4615878364452126-640-0.jpg);
+    background-size: cover;
+    padding-bottom: 200px; }
+  .title__pagMates {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0px; }
+  .img_set {
+    max-width: 150px;
+    max-height: 150px; }
+  .text_set {
+    max-width: 300px;
+    max-height: 400px; }
+  .boton_set {
+    border-radius: 30px; } }
+
+@media screen and (max-width: 320px) {
+  #portada_pagTermos {
+    background-image: url(http://d3ugyf2ht6aenh.cloudfront.net/stores/157/335/products/20200406_1520481-4a80313ae1360a0a4615878364452126-640-0.jpg);
+    background-size: cover;
+    padding-bottom: 100px; }
+  .title__pagMates {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0px; }
+  .img_set {
+    max-width: 120px;
+    max-height: 120px; }
+  .text_set {
+    max-width: 200px;
+    max-height: 200px;
+    font-size: 10px; }
+  .nombre_set {
+    font-size: 15px; }
+  .boton_set {
+    border-radius: 30px; } }
+
 /*---------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*Diseños PAGINAS - COMBOS*/
 #portada_pagCombos {
   background-image: url(http://d3ugyf2ht6aenh.cloudfront.net/stores/157/335/products/20200406_1520481-4a80313ae1360a0a4615878364452126-640-0.jpg); }
 
+.boton_set {
+  background-color: #212227; }
+  .boton_set .nombre_set {
+    color: #fff; }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  #portada_pagCombos {
+    background-image: url(http://d3ugyf2ht6aenh.cloudfront.net/stores/157/335/products/20200406_1520481-4a80313ae1360a0a4615878364452126-640-0.jpg);
+    background-size: cover;
+    padding-bottom: 300px; }
+  .img_set {
+    max-width: 200px;
+    max-height: 200px; }
+  .text_set {
+    max-width: 500px;
+    max-height: 300px; } }
+
+@media screen and (max-width: 768px) {
+  #portada_pagTermos {
+    background-image: url(http://d3ugyf2ht6aenh.cloudfront.net/stores/157/335/products/20200406_1520481-4a80313ae1360a0a4615878364452126-640-0.jpg);
+    background-size: cover;
+    padding-bottom: 200px; }
+  .title__pagMates {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0px; }
+  .img_set {
+    max-width: 150px;
+    max-height: 150px; }
+  .text_set {
+    max-width: 300px;
+    max-height: 400px; }
+  .boton_set {
+    border-radius: 30px; } }
+
+@media screen and (max-width: 320px) {
+  #portada_pagTermos {
+    background-image: url(http://d3ugyf2ht6aenh.cloudfront.net/stores/157/335/products/20200406_1520481-4a80313ae1360a0a4615878364452126-640-0.jpg);
+    background-size: cover;
+    padding-bottom: 100px; }
+  .title__pagMates {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0px; }
+  .img_set {
+    max-width: 120px;
+    max-height: 120px; }
+  .text_set {
+    max-width: 200px;
+    max-height: 200px;
+    font-size: 10px; }
+  .nombre_set {
+    font-size: 15px; }
+  .boton_set {
+    border-radius: 30px; } }
+
 /*---------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*Diseños PAGINAS - CONTACTO*/
-.formulario {
-  border: 5px solid;
-  text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  padding: 10px; }
+.form_correo {
+  border-radius: 20px;
+  width: 800px; }
 
-.contact_title {
-  padding: 20px; }
-
-.boton__envio {
-  padding: 100px;
-  border-bottom: center; }
+.form-control {
+  border-radius: 20px;
+  width: 1200px;
+  height: 150px; }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*Diseño PAGINAS - MATES*/
@@ -192,7 +305,7 @@ header {
     font-size: 17px; }
   .title__pagMates {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     margin-top: 0px; }
   .img_mat {
@@ -209,7 +322,7 @@ header {
     padding-bottom: 100px; }
   .title__pagMates {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     margin-top: 0px; }
   .img_mat {
@@ -224,5 +337,63 @@ header {
 /*Diseños PAGINAS - TERMOS*/
 #portada_pagTermos {
   background-image: url(https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/CYW562AWOZAYHDADDZZNDIJ7LE.jpg); }
+
+.boton_termo {
+  background-color: #212227; }
+  .boton_termo .nombre_termo {
+    color: #fff; }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  #portada_pagTermos {
+    background-image: url(https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/CYW562AWOZAYHDADDZZNDIJ7LE.jpg);
+    background-size: cover;
+    padding-bottom: 300px; }
+  .img_termos {
+    max-width: 200px;
+    max-height: 200px; }
+  .text_termo {
+    max-width: 500px;
+    max-height: 300px; } }
+
+@media screen and (max-width: 768px) {
+  #portada_pagTermos {
+    background-image: url(https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/CYW562AWOZAYHDADDZZNDIJ7LE.jpg);
+    background-size: cover;
+    padding-bottom: 200px; }
+  .title__pagMates {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0px; }
+  .img_termos {
+    max-width: 150px;
+    max-height: 150px; }
+  .text_termo {
+    max-width: 300px;
+    max-height: 400px; }
+  .boton_termo {
+    border-radius: 30px; } }
+
+@media screen and (max-width: 320px) {
+  #portada_pagTermos {
+    background-image: url(https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/CYW562AWOZAYHDADDZZNDIJ7LE.jpg);
+    background-size: cover;
+    padding-bottom: 100px; }
+  .title__pagMates {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0px; }
+  .img_termos {
+    max-width: 120px;
+    max-height: 120px; }
+  .text_termo {
+    max-width: 200px;
+    max-height: 200px;
+    font-size: 10px; }
+  .nombre_termo {
+    font-size: 15px; }
+  .boton_termo {
+    border-radius: 30px; } }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------*/
