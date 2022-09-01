@@ -69,7 +69,7 @@ header {
   #pagPerfil .about {
     background-color: #465775; }
     #pagPerfil .about_title {
-      font-size: 200px;
+      font-size: 100px;
       font-family: italic; }
     #pagPerfil .about__text {
       font-size: 35px;
@@ -99,6 +99,8 @@ header {
     grid-template-columns: auto auto; }
   .about__text {
     font-size: 30px; }
+  .about__title {
+    font-size: 20px; }
   .promo__img {
     max-width: 150px;
     max-height: 150px; }
@@ -117,6 +119,8 @@ header {
   .promo {
     grid-template-columns: auto auto; }
   .about__text {
+    font-size: 20px; }
+  .about__title {
     font-size: 20px; }
   .promo__img {
     max-width: 80px;
