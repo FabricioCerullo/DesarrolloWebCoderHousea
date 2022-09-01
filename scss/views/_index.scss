@@ -22,7 +22,7 @@
         background-color: #465775;
     
         &_title{
-            font-size: map-get($fuentes, n10);
+            font-size: map-get($fuentes, n8);
             font-family: italic;
         };
         &__text{
@@ -72,6 +72,9 @@
         font-size: map-get($fuentes, n4);
     }
 
+    .about__title {
+        font-size: map-get($fuentes, n2);
+    }
     .promo__img {
         max-width: map-get($fuentes, n9);
         max-height: map-get($fuentes, n9);
@@ -98,6 +101,10 @@
     }
 
     .about__text {
+        font-size: map-get($fuentes, n2);
+    }
+
+    .about__title {
         font-size: map-get($fuentes, n2);
     }
 
