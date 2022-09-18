@@ -2,11 +2,15 @@
 /*Diseño PAGINAS - MATES*/
 
 
-
 #portada_pagMates{
-    background-image: url(https://www.quieromate.com.ar/wp-content/uploads/2019/05/Tipos-de-Mates-1200x667.jpg); 
-    @extend .portadas;
+    .titulo_fondo{
+        @extend .modelo_titulo;
+        @extend .box_tamaño;
+    }
+    background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
+        @extend .modelo_fondo;
 }
+
 
 .botonMate{
     @extend .btn-primary;
@@ -14,79 +18,125 @@
     .nombre_mate{
         color: #fff;
     }
+
+
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    #portada_pagMates{
-        background-image: url(https://www.quieromate.com.ar/wp-content/uploads/2019/05/Tipos-de-Mates-1200x667.jpg); 
-        background-size: cover;
-        padding-bottom: 300px;
-    }
-    
-    .parrafo__tMate{
-        font-family: 'Times New Roman', Times, serif;
-        font-size:25px;
+.botonMate:hover{
+    background-color: #FADF63; 
+    .nombre_mate{
+        color: #212227;
     }
 
+}
+
+@media screen and (min-width: 1199px) and (max-width: 1700px){
+    #portada_pagMates{
+        .titulo_fondo{  
+
+            font-size: map-get($fuentes,n8);
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            top: 110px;
+            right: 220px;
+
+        }
+        background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
+        width: 100%;
+        height : 100%;
+        border-radius: 20px;
+        border: 2px solid;
+    }
+
+
     .img_mat{
-        max-width:200px;
-        max-height: 200px;
+        max-width: 200px;
+        max-height:200px;
+    }
+
+    .nombre_mate{
+        font-size: 15px;
     }
 
     .text_mate{
-        max-width:500px;
-        max-height: 300px;
+        max-width:700px;
+        max-height: 100px;
+        font-size: 15px;
     }
 }
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px){
     #portada_pagMates{
-        background-image: url(https://www.quieromate.com.ar/wp-content/uploads/2019/05/Tipos-de-Mates-1200x667.jpg); 
-        background-size: cover;
-        padding-bottom: 200px;
-    }
-    
-    .parrafo__tMate{
-        font-family: 'Times New Roman', Times, serif;
-        font-size:17px;
+        .titulo_fondo{
+            width:700px;
+            height: 350px;
+            font-size: map-get($fuentes,n7);
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            top: 130px;
+
+        }
+        background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
+        width: 100%;
+        height : 100%;
+        border-radius: 20px;
+        border: 2px solid;
     }
 
-    .title__pagMates{
-        @include title_pag;
-    }
 
     .img_mat{
-        max-width:150px;
-        max-height: 150px;
+        max-width: 200px;
+        max-height:200px;
     }
+
+    .nombre_mate{
+        font-size: 15px;
+    }
+
+    .text_mate{
+        max-width:700px;
+        max-height: 100px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:768px){
+    #portada_pagMates{
+        .titulo_fondo{
+            width:250px;
+            height: 200px;
+            font-size: map-get($fuentes,n5);
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            top: 100px;
+
+        }
+        background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
+        width: 100%;
+        height : 100%;
+        border-radius: 20px;
+        border: 2px solid;
+    }
+
+
+    .img_mat{
+        max-width: 200px;
+        max-height:200px;
+    }
+
+    .nombre_mate{
+        font-size: 15px;
+    }
+
     .text_mate{
         max-width:300px;
-        max-height: 400px;
-    }
-}
-
-@media screen and (max-width:320px) {
-    #portada_pagMates{
-        background-image: url(https://www.quieromate.com.ar/wp-content/uploads/2019/05/Tipos-de-Mates-1200x667.jpg); 
-        background-size: cover;
-        padding-bottom: 100px;
-    }
-
-    .title__pagMates{
-        @include title_pag;
-    }
-    
-    .img_mat{
-        max-width:120px;
-        max-height: 120px;
-    }
-
-    .text_mate{
-        max-width:200px;
         max-height: 200px;
-        font-size: 10px;
+        font-size: 15px;
     }
   
 }
