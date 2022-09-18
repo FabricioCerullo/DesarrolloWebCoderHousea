@@ -6,7 +6,8 @@
   padding: 0; }
 
 body {
-  background-color: #465775; }
+  background-color: #465775;
+  background-image: url(../imagenes_removed_fondo/depositphotos_119591490-stock-illustration-pattern-with-tea-leaf-mate.jpg); }
 
 ul {
   list-style-type: none; }
@@ -34,60 +35,99 @@ li {
     width: 300px;
     height: 300px; }
 
-.portadas, #portada_pagBombillas, #portada_pagCombos, #portada_pagMates, #portada_pagTermos {
-  background-size: cover;
-  padding-bottom: 500px;
+.portadas {
   border-radius: 200px; }
 
+.box_tamaño, #portada_pagBombillas .titulo_fondo, #portada_pagCombos .titulo_fondo, #portada_pagMates .titulo_fondo, #portada_pagTermos .titulo_fondo {
+  width: 1900px;
+  height: 500px; }
+
+.modelo_fondo, #portada_pagBombillas, #portada_pagCombos, #portada_pagMates, #portada_pagTermos {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  border: 2px solid; }
+
+.modelo_titulo, #portada_pagBombillas .titulo_fondo, #portada_pagCombos .titulo_fondo, #portada_pagMates .titulo_fondo, #portada_pagTermos .titulo_fondo {
+  font-size: 150px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  top: 150px; }
+
+/*-------------------------------MOBILE-------------------------------*/
 /*-------///PARTIALS///--------------------------------------------------------------------------------------------------------------------------------------------*/
 footer {
   background-color: white;
-  padding: 50px;
   text-align: center;
-  border-radius: 50px; }
+  border-radius: 50px;
+  opacity: 0.9; }
 
 header {
-  background-color: #341E3B; }
+  background-color: white; }
 
 /*----------VIEWS-----------------------------------------------------------------------------------------------------------------------------------------*/
 /*Diseño INICIO*/
-.promo__title {
-  font-family: italic;
+#pagPerfil .about_title {
+  /*FONDO - IMAGEN*/
+  font-weight: 100px;
+  background-image: url(../imagenes_removed_fondo/floral-y-hojas-color-mate-fondo-estos-gráficos-vienen-en-tipos-de-archivos-muy-fáciles-aplicar-con-cualquier-software-esta-22103.jpg);
+  border-radius: 50px;
+  max-height: 200px;
   text-align: center;
-  font-size: 100px; }
+  /*TITULO - LETRAS*/
+  font-size: 150px;
+  font-family: monospace;
+  font-weight: bold; }
 
 .promo {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  background-color: #130303;
-  border-radius: 70px; }
-
-#pagPerfil {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 35px;
-  text-align: center; }
-  #pagPerfil .about {
-    background-color: #465775; }
-    #pagPerfil .about_title {
-      font-size: 100px;
-      font-family: italic; }
-    #pagPerfil .about__text {
-      font-size: 35px;
-      font-family: cursive; }
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .promo {
-    grid-template-columns: auto auto auto auto; }
-  .about__text {
-    font-size: 30px; }
+  grid-template-columns: auto auto auto auto; }
   .promo__img {
+    background-color: #1a1a1f;
+    border-radius: 50px;
     max-width: 200px;
-    max-height: 200px; }
+    max-height: 200px;
+    padding: 10px; }
   .promo__title {
-    font-size: 35px; }
-  .link__mate {
+    background-image: url(../imagenes_removed_fondo/istockphoto-1351228744-612x612.jpg);
+    border-radius: 70px;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    font-size: 80px; }
+  .promo .link__mate {
     max-width: 20px;
-    max-width: 20px; }
+    max-height: 300px; }
+
+@media screen and (max-width: 1199px) {
+  #pagPerfil .about_title {
+    /*FONDO - IMAGEN*/
+    text-align: center;
+    /*TITULO - LETRAS*/
+    font-size: 150px;
+    font-family: monospace;
+    font-weight: bold; }
+  .promo {
+    display: grid;
+    grid-template-rows: auto; }
+    .promo__img {
+      background-color: #1a1a1f;
+      border-radius: 20px;
+      max-width: 150px;
+      max-height: 150px;
+      padding: 5px; }
+    .promo__title {
+      background-image: url(../imagenes_removed_fondo/istockphoto-1351228744-612x612.jpg);
+      border-radius: 70px;
+      font-family: monospace;
+      font-weight: bold;
+      text-align: center;
+      font-size: 100px;
+      padding: 20px; }
+    .promo .link__mate {
+      max-width: 5px;
+      max-height: 100px; }
   footer {
     background-color: azure;
     padding: 50px;
@@ -95,20 +135,38 @@ header {
     font-size: 15px; } }
 
 @media screen and (max-width: 768px) {
+  #pagPerfil .about_title {
+    /*FONDO - IMAGEN*/
+    text-align: center;
+    /*TITULO - LETRAS*/
+    font-size: 100px;
+    font-family: monospace;
+    font-weight: bold; }
   .promo {
-    grid-template-columns: auto auto; }
-  .about__text {
-    font-size: 30px; }
-  .about__title {
-    font-size: 20px; }
-  .promo__img {
-    max-width: 150px;
-    max-height: 150px; }
-  .promo__title {
-    font-size: 30px; }
-  .link__mate {
-    max-width: 20px;
-    max-width: 20px; }
+    display: grid;
+    grid-template-rows: auto; }
+    .promo__img {
+      background-color: #1a1a1f;
+      border-radius: 20px;
+      max-width: 100px;
+      max-height: 100px;
+      padding: 5px; }
+    .promo__title {
+      background-image: url(../imagenes_removed_fondo/istockphoto-1351228744-612x612.jpg);
+      border-radius: 70px;
+      font-family: monospace;
+      font-weight: bold;
+      text-align: center;
+      font-size: 50px;
+      padding: 20px; }
+    .promo .link__mate {
+      max-width: 5px;
+      max-height: 100px; }
+  footer {
+    background-color: azure;
+    padding: 50px;
+    text-align: center;
+    font-size: 15px; }
   footer {
     background-color: azure;
     padding: 50px;
@@ -116,20 +174,33 @@ header {
     font-size: 15px; } }
 
 @media screen and (max-width: 320px) {
+  #pagPerfil .about_title {
+    /*FONDO - IMAGEN*/
+    text-align: center;
+    /*TITULO - LETRAS*/
+    font-size: 80px;
+    font-family: monospace;
+    font-weight: bold; }
   .promo {
-    grid-template-columns: auto auto; }
-  .about__text {
-    font-size: 20px; }
-  .about__title {
-    font-size: 20px; }
-  .promo__img {
-    max-width: 80px;
-    max-height: 80px; }
-  .promo__title {
-    font-size: 15px; }
-  .link__mate {
-    max-width: 20px;
-    max-width: 20px; }
+    display: grid;
+    grid-template-rows: auto; }
+    .promo__img {
+      background-color: #1a1a1f;
+      border-radius: 20px;
+      max-width: 70px;
+      max-height: 70px;
+      padding: 10px; }
+    .promo__title {
+      background-image: url(../imagenes_removed_fondo/istockphoto-1351228744-612x612.jpg);
+      border-radius: 70px;
+      font-family: monospace;
+      font-weight: bold;
+      text-align: center;
+      font-size: 35px;
+      padding: 20px; }
+    .promo .link__mate {
+      max-width: 5px;
+      max-height: 100px; }
   footer {
     background-color: azure;
     padding: 50px;
@@ -139,7 +210,7 @@ header {
 /*---------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*Diseños PAGINAS - BOMBILLAS*/
 #portada_pagBombillas {
-  background-image: url(https://inym.org.ar/imagenes/archivos/noticias/78748_listaImagenes-1_1088x650xrecortarxagrandar.jpg?random=1613667611); }
+  background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg); }
 
 .boton_bombilla {
   background-color: #212227;
@@ -147,68 +218,104 @@ header {
   .boton_bombilla .nombre_bomb {
     color: #fff; }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  #portada_pagCombos {
-    background-image: url(http://d3ugyf2ht6aenh.cloudfront.net/stores/157/335/products/20200406_1520481-4a80313ae1360a0a4615878364452126-640-0.jpg);
-    background-size: cover;
-    padding-bottom: 300px; }
+.boton_bombilla:hover {
+  background-color: #FADF63; }
+  .boton_bombilla:hover .nombre_bomb {
+    color: #212227; }
+
+element.style {
+  width: 0px; }
+
+@media screen and (min-width: 1199px) and (max-width: 1700px) {
+  #portada_pagBombillas {
+    background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid; }
+    #portada_pagBombillas .titulo_fondo {
+      width: 250px;
+      height: 200px;
+      font-size: 100px;
+      font-weight: bold;
+      text-align: right;
+      position: relative;
+      top: 50px;
+      left: 400px; }
   .img_bomb {
     max-width: 200px;
     max-height: 200px; }
   .text_bomb {
-    max-width: 500px;
-    max-height: 300px; } }
-
-@media screen and (max-width: 768px) {
-  #portada_pagTermos {
-    background-image: url(http://d3ugyf2ht6aenh.cloudfront.net/stores/157/335/products/20200406_1520481-4a80313ae1360a0a4615878364452126-640-0.jpg);
-    background-size: cover;
-    padding-bottom: 200px; }
-  .title__pagMates {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    text-align: center;
-    margin-top: 0px; }
-  .img_set {
-    max-width: 150px;
-    max-height: 150px; }
-  .text_set {
-    max-width: 300px;
-    max-height: 400px; }
-  .boton_set {
-    border-radius: 30px; } }
-
-@media screen and (max-width: 320px) {
-  #portada_pagTermos {
-    background-image: url(http://d3ugyf2ht6aenh.cloudfront.net/stores/157/335/products/20200406_1520481-4a80313ae1360a0a4615878364452126-640-0.jpg);
-    background-size: cover;
-    padding-bottom: 100px; }
-  .title__pagMates {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    text-align: center;
-    margin-top: 0px; }
-  .img_set {
-    max-width: 120px;
-    max-height: 120px; }
-  .text_set {
-    max-width: 200px;
-    max-height: 200px;
-    font-size: 10px; }
-  .nombre_set {
+    width: 1000px;
+    height: 100px;
     font-size: 15px; }
-  .boton_set {
-    border-radius: 30px; } }
+  .nombre_bomb {
+    font-size: 15px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  #portada_pagBombillas {
+    background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid; }
+    #portada_pagBombillas .titulo_fondo {
+      width: 700px;
+      height: 350px;
+      font-size: 80px;
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      top: 120px; }
+  .img_bomb {
+    max-width: 200px;
+    max-height: 200px; }
+  .text_bomb {
+    width: 700px;
+    height: 100px;
+    font-size: 15px; }
+  .nombre_bomb {
+    font-size: 15px; } }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  #portada_pagBombillas {
+    background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid; }
+    #portada_pagBombillas .titulo_fondo {
+      width: 250px;
+      height: 200px;
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      top: 80px; }
+  .img_bomb {
+    max-width: 200px;
+    max-height: 200px; }
+  .text_bomb {
+    width: 300px;
+    height: 200px;
+    font-size: 15px; }
+  .nombre_bomb {
+    font-size: 15px; } }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*Diseños PAGINAS - COMBOS*/
 #portada_pagCombos {
-  background-image: url(http://d3ugyf2ht6aenh.cloudfront.net/stores/157/335/products/20200406_1520481-4a80313ae1360a0a4615878364452126-640-0.jpg); }
+  background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg); }
 
 .boton_set {
   background-color: #212227; }
   .boton_set .nombre_set {
     color: #fff; }
+
+.boton_set:hover {
+  background-color: #FADF63; }
+  .boton_set:hover .nombre_set {
+    color: #212227; }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   #portada_pagCombos {
@@ -265,138 +372,183 @@ header {
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*Diseños PAGINAS - CONTACTO*/
-.form_correo {
-  border-radius: 20px;
-  width: 800px; }
-
-.form-control {
-  border-radius: 20px;
-  width: 1200px;
-  height: 150px; }
-
 /*---------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*Diseño PAGINAS - MATES*/
 #portada_pagMates {
-  background-image: url(https://www.quieromate.com.ar/wp-content/uploads/2019/05/Tipos-de-Mates-1200x667.jpg); }
+  background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg); }
 
 .botonMate {
   background-color: #212227; }
   .botonMate .nombre_mate {
     color: #fff; }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+.botonMate:hover {
+  background-color: #FADF63; }
+  .botonMate:hover .nombre_mate {
+    color: #212227; }
+
+@media screen and (min-width: 1199px) and (max-width: 1700px) {
   #portada_pagMates {
-    background-image: url(https://www.quieromate.com.ar/wp-content/uploads/2019/05/Tipos-de-Mates-1200x667.jpg);
-    background-size: cover;
-    padding-bottom: 300px; }
-  .parrafo__tMate {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px; }
+    background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid; }
+    #portada_pagMates .titulo_fondo {
+      font-size: 100px;
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      top: 110px;
+      right: 220px; }
   .img_mat {
     max-width: 200px;
     max-height: 200px; }
+  .nombre_mate {
+    font-size: 15px; }
   .text_mate {
-    max-width: 500px;
-    max-height: 300px; } }
+    max-width: 700px;
+    max-height: 100px;
+    font-size: 15px; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   #portada_pagMates {
-    background-image: url(https://www.quieromate.com.ar/wp-content/uploads/2019/05/Tipos-de-Mates-1200x667.jpg);
-    background-size: cover;
-    padding-bottom: 200px; }
-  .parrafo__tMate {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 17px; }
-  .title__pagMates {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    text-align: center;
-    margin-top: 0px; }
+    background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid; }
+    #portada_pagMates .titulo_fondo {
+      width: 700px;
+      height: 350px;
+      font-size: 80px;
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      top: 130px; }
   .img_mat {
-    max-width: 150px;
-    max-height: 150px; }
+    max-width: 200px;
+    max-height: 200px; }
+  .nombre_mate {
+    font-size: 15px; }
+  .text_mate {
+    max-width: 700px;
+    max-height: 100px;
+    font-size: 15px; } }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  #portada_pagMates {
+    background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid; }
+    #portada_pagMates .titulo_fondo {
+      width: 250px;
+      height: 200px;
+      font-size: 35px;
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      top: 100px; }
+  .img_mat {
+    max-width: 200px;
+    max-height: 200px; }
+  .nombre_mate {
+    font-size: 15px; }
   .text_mate {
     max-width: 300px;
-    max-height: 400px; } }
-
-@media screen and (max-width: 320px) {
-  #portada_pagMates {
-    background-image: url(https://www.quieromate.com.ar/wp-content/uploads/2019/05/Tipos-de-Mates-1200x667.jpg);
-    background-size: cover;
-    padding-bottom: 100px; }
-  .title__pagMates {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    text-align: center;
-    margin-top: 0px; }
-  .img_mat {
-    max-width: 120px;
-    max-height: 120px; }
-  .text_mate {
-    max-width: 200px;
     max-height: 200px;
-    font-size: 10px; } }
+    font-size: 15px; } }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*Diseños PAGINAS - TERMOS*/
 #portada_pagTermos {
-  background-image: url(https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/CYW562AWOZAYHDADDZZNDIJ7LE.jpg); }
+  background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg); }
 
 .boton_termo {
   background-color: #212227; }
   .boton_termo .nombre_termo {
     color: #fff; }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+.boton_termo:hover {
+  background-color: #FADF63; }
+  .boton_termo:hover .nombre_termo {
+    color: #212227; }
+
+@media screen and (min-width: 1199px) and (max-width: 1700px) {
   #portada_pagTermos {
-    background-image: url(https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/CYW562AWOZAYHDADDZZNDIJ7LE.jpg);
-    background-size: cover;
-    padding-bottom: 300px; }
+    background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid; }
+    #portada_pagTermos .titulo_fondo {
+      font-size: 100px;
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      right: 350px; }
   .img_termos {
     max-width: 200px;
     max-height: 200px; }
   .text_termo {
-    max-width: 500px;
-    max-height: 300px; } }
-
-@media screen and (max-width: 768px) {
-  #portada_pagTermos {
-    background-image: url(https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/CYW562AWOZAYHDADDZZNDIJ7LE.jpg);
-    background-size: cover;
-    padding-bottom: 200px; }
-  .title__pagMates {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    text-align: center;
-    margin-top: 0px; }
-  .img_termos {
-    max-width: 150px;
-    max-height: 150px; }
-  .text_termo {
     max-width: 300px;
-    max-height: 400px; }
+    max-height: 100px;
+    font-size: 15px; }
+  .nombre_termo {
+    font-size: 10px; }
   .boton_termo {
     border-radius: 30px; } }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   #portada_pagTermos {
-    background-image: url(https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/CYW562AWOZAYHDADDZZNDIJ7LE.jpg);
-    background-size: cover;
-    padding-bottom: 100px; }
-  .title__pagMates {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    text-align: center;
-    margin-top: 0px; }
+    background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid; }
+    #portada_pagTermos .titulo_fondo {
+      font-size: 80px;
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      top: 130px;
+      right: 350px; }
   .img_termos {
-    max-width: 120px;
-    max-height: 120px; }
-  .text_termo {
     max-width: 200px;
+    max-height: 200px; }
+  .text_termo {
+    width: 700px;
     max-height: 200px;
-    font-size: 10px; }
+    font-size: 15px; }
   .nombre_termo {
     font-size: 15px; }
+  .boton_termo {
+    border-radius: 30px; } }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  #portada_pagTermos {
+    background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid; }
+    #portada_pagTermos .titulo_fondo {
+      font-size: 35px;
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      top: 120px; }
+  .img_termos {
+    max-width: 200px;
+    max-height: 200px; }
+  .text_termo {
+    max-width: 300px;
+    max-height: 200px;
+    font-size: 15px; }
+  .nombre_termo {
+    font-size: 10px; }
   .boton_termo {
     border-radius: 30px; } }
 
