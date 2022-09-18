@@ -1,93 +1,147 @@
 /*Diseño INICIO*/
-.promo__title{
-    font-family: italic;
-    text-align: center;
-    font-size: map-get($fuentes, n8);
+
+#pagPerfil {
+    .about_title{
+            /*FONDO - IMAGEN*/ 
+        font-weight: 100px;
+        background-image: url(../imagenes_removed_fondo/floral-y-hojas-color-mate-fondo-estos-gráficos-vienen-en-tipos-de-archivos-muy-fáciles-aplicar-con-cualquier-software-esta-22103.jpg);
+        border-radius: 50px;
+        max-height: 200px;
+        text-align: center ;
+
+           /*TITULO - LETRAS*/
+        font-size: map-get($fuentes, n9);
+        font-family: monospace;
+        font-weight: bold;
+    }
 }
 
 
 .promo {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    background-color: #130303;
-    border-radius: 70px;
-}
 
-#pagPerfil {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: map-get($fuentes, n5);
-    text-align: center;
-
-    .about{
-        background-color: #465775;
-    
-        &_title{
-            font-size: map-get($fuentes, n8);
-            font-family: italic;
-        };
-        &__text{
-            font-size: map-get($fuentes, n5);
-            font-family: cursive;
-        }
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    .promo {
-        grid-template-columns:auto auto auto auto;
+    &__img{
+        background-color: rgb(26, 26, 31);
+        border-radius:50px;
+        max-width: 200px;
+        max-height: 200px;
+        padding : 10px;
     }
 
-    .about__text {
-        font-size: map-get($fuentes, n4);
-    }
-
-    .promo__img {
-        max-width: map-get($fuentes, n10);
-        max-height: map-get($fuentes, n10);
-    }
-
-    .promo__title{
-        font-size: map-get($fuentes, n5);
+    &__title{
+        background-image: url(../imagenes_removed_fondo/istockphoto-1351228744-612x612.jpg);
+        border-radius: 70px;
+        font-family: monospace;
+        font-weight: bold;
+        text-align: center;
+        font-size: map-get($fuentes, n7);
     }
 
     .link__mate{
-        max-width: map-get($fuentes, n2);
-        max-width: map-get($fuentes, n2);
+        max-width: 20px;
+        max-height: 300px;
+    }
+}
+
+
+@media screen and (max-width: 1199px){
+    #pagPerfil {
+        .about_title{
+            /*FONDO - IMAGEN*/ 
+             text-align: center ;
+
+           /*TITULO - LETRAS*/
+            font-size: map-get($fuentes, n9);
+            font-family: monospace;
+            font-weight: bold;
+        }
     }
 
+    .promo {
+        display: grid;
+        grid-template-rows: auto;
+      
+        &__img{
+            background-color: rgb(26, 26, 31);
+            border-radius:20px;
+            max-width: 150px;
+            max-height: 150px;
+            padding: 5px;
+        }
+    
+        &__title{
+            background-image: url(../imagenes_removed_fondo/istockphoto-1351228744-612x612.jpg);
+            border-radius: 70px;
+            font-family: monospace;
+            font-weight: bold;
+            text-align: center;
+            font-size: map-get($fuentes, n8);
+            padding: 20px;
+        }
+    
+        .link__mate{
+            max-width: 5px;
+            max-height: 100px;
+        }
+    }
+    
+    footer{
+        @include footer_mobile;
+    }   
+
+}
+
+    
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    #pagPerfil {
+        .about_title{
+            /*FONDO - IMAGEN*/ 
+             text-align: center ;
+           /*TITULO - LETRAS*/
+            font-size: map-get($fuentes, n8);
+            font-family: monospace;
+            font-weight: bold;
+        }
+    }
+
+    .promo {
+        display: grid;
+        grid-template-rows: auto;
+      
+        &__img{
+            background-color: rgb(26, 26, 31);
+            border-radius:20px;
+            max-width: 100px;
+            max-height: 100px;
+            padding: 5px;
+        }
+    
+        &__title{
+            background-image: url(../imagenes_removed_fondo/istockphoto-1351228744-612x612.jpg);
+            border-radius: 70px;
+            font-family: monospace;
+            font-weight: bold;
+            text-align: center;
+            font-size: map-get($fuentes, n6);
+            padding: 20px;
+        }
+    
+        .link__mate{
+            max-width: 5px;
+            max-height: 100px;
+        }
+    }
+    
     footer{
         @include footer_mobile;
     }
     
-
-}
-
-
-@media screen and (max-width: 768px) {
-    .promo {
-        grid-template-columns:auto auto;
-    }
-
-    .about__text {
-        font-size: map-get($fuentes, n4);
-    }
-
-    .about__title {
-        font-size: map-get($fuentes, n2);
-    }
-    .promo__img {
-        max-width: map-get($fuentes, n9);
-        max-height: map-get($fuentes, n9);
-    }
-
-    .promo__title{
-        font-size: map-get($fuentes, n4);
-    }
-
-    .link__mate{
-        max-width: map-get($fuentes, n2);
-        max-width: map-get($fuentes, n2);
-    }
 
     footer{
         @include footer_mobile;
@@ -96,32 +150,45 @@
 }
 
 @media screen and (max-width:320px) {
+    #pagPerfil {
+        .about_title{
+            /*FONDO - IMAGEN*/ 
+             text-align: center ;
+           /*TITULO - LETRAS*/
+            font-size: map-get($fuentes, n7);
+            font-family: monospace;
+            font-weight: bold;
+        }
+    }
+
     .promo {
-        grid-template-columns:auto auto;
+        display: grid;
+        grid-template-rows: auto;
+      
+        &__img{
+            background-color: rgb(26, 26, 31);
+            border-radius:20px;
+            max-width: 70px;
+            max-height: 70px;
+            padding: 10px;
+        }
+    
+        &__title{
+            background-image: url(../imagenes_removed_fondo/istockphoto-1351228744-612x612.jpg);
+            border-radius: 70px;
+            font-family: monospace;
+            font-weight: bold;
+            text-align: center;
+            font-size: map-get($fuentes, n5);
+            padding: 20px;
+        }
+    
+        .link__mate{
+            max-width: 5px;
+            max-height: 100px;
+        }
     }
-
-    .about__text {
-        font-size: map-get($fuentes, n2);
-    }
-
-    .about__title {
-        font-size: map-get($fuentes, n2);
-    }
-
-    .promo__img {
-        max-width: map-get($fuentes, n7);
-        max-height: map-get($fuentes, n7);
-    }
-
-    .promo__title{
-        font-size: map-get($fuentes, n1);
-    }
-
-    .link__mate{
-        max-width: map-get($fuentes, n2);
-        max-width: map-get($fuentes, n2);
-    }
-
+    
     footer{
         @include footer_mobile;
     }
