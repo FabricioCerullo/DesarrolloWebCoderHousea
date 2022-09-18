@@ -1,10 +1,13 @@
 /*---------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*Diseños PAGINAS - TERMOS*/
 
-
 #portada_pagTermos{
-    background-image: url(https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/CYW562AWOZAYHDADDZZNDIJ7LE.jpg);
-    @extend .portadas;
+    .titulo_fondo{
+        @extend .modelo_titulo;
+        @extend .box_tamaño;
+    }
+    background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
+    @extend .modelo_fondo;
 }
 
 .boton_termo{
@@ -15,78 +18,132 @@
     }
 }
 
-
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    #portada_pagTermos{
-        background-image: url(https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/CYW562AWOZAYHDADDZZNDIJ7LE.jpg);
-        background-size: cover;
-        padding-bottom: 300px;
+.boton_termo:hover{
+    background-color: #FADF63; 
+    .nombre_termo{
+        color: #212227;
     }
-    
+
+}
+
+
+
+
+@media screen and (min-width: 1199px) and (max-width: 1700px){
+    #portada_pagTermos{
+        .titulo_fondo{
+            font-size: map-get($fuentes,n8);
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            right:350px;
+
+        }
+        background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
+        width: 100%;
+        height : 100%;
+        border-radius: 20px;
+        border: 2px solid;
+    }
+
+
     .img_termos{
         max-width:200px;
         max-height: 200px;
     }
 
-    .text_termo{
-        max-width:500px;
-        max-height: 300px;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    #portada_pagTermos{
-        background-image: url(https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/CYW562AWOZAYHDADDZZNDIJ7LE.jpg);
-        background-size: cover;
-        padding-bottom: 200px;
-    }
-    
-    .title__pagMates{
-        @include title_pag;
-    }
-
-    .img_termos{
-        max-width:150px;
-        max-height: 150px;
-    }
     .text_termo{
         max-width:300px;
-        max-height: 400px;
-    }
-
-    .boton_termo{
-        border-radius: 30px;
-    }
-}
-
-
-@media screen and (max-width:320px) {
-    #portada_pagTermos{
-        background-image: url(https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/CYW562AWOZAYHDADDZZNDIJ7LE.jpg);
-        background-size: cover;
-        padding-bottom: 100px;
-    }
-
-    .title__pagMates{
-        @include title_pag;
-    }
-    
-    .img_termos{
-        max-width:120px;
-        max-height: 120px;
-    }
-
-    .text_termo{
-        max-width:200px;
-        max-height: 200px;
-        font-size: 10px;
+        max-height: 100px;
+        font-size: 15px;
     }
 
     
     .nombre_termo{
-        font-size: map-get($fuentes,n1);
+        font-size: 10px;
+    }
+  
+
+    .boton_termo{
+        border-radius: 30px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    #portada_pagTermos{
+        .titulo_fondo{
+            font-size: map-get($fuentes,n7);
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            top: 130px;
+            right: 350px;
+        }
+        background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
+        width: 100%;
+        height : 100%;
+        border-radius: 20px;
+        border: 2px solid;
+    }
+
+
+    .img_termos{
+        max-width:200px;
+        max-height: 200px;
+    }
+
+    .text_termo{
+        width:700px;
+        max-height: 200px;
+        font-size: 15px;
+    }
+
+    
+    .nombre_termo{
+        font-size: 15px;
+    }
+  
+
+    .boton_termo{
+        border-radius: 30px;
+    }
+
+}
+
+
+@media screen and (min-width:320px) and (max-width:768px){
+    #portada_pagTermos{
+        .titulo_fondo{
+            font-size: map-get($fuentes,n5);
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            top: 120px;
+
+        }
+        background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
+        width: 100%;
+        height : 100%;
+        border-radius: 20px;
+        border: 2px solid;
+    }
+
+
+    .img_termos{
+        max-width:200px;
+        max-height: 200px;
+    }
+
+    .text_termo{
+        max-width:300px;
+        max-height: 200px;
+        font-size: 15px;
+    }
+
+    
+    .nombre_termo{
+        font-size: 10px;
     }
   
 
