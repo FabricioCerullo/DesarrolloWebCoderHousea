@@ -2,9 +2,14 @@
 /*Diseños PAGINAS - COMBOS*/
 
 #portada_pagCombos{
-    background-image: url(http://d3ugyf2ht6aenh.cloudfront.net/stores/157/335/products/20200406_1520481-4a80313ae1360a0a4615878364452126-640-0.jpg);
-    @extend .portadas;
+    .titulo_fondo{
+        @extend .modelo_titulo;
+        @extend .box_tamaño;
+    }
+    background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
+    @extend .modelo_fondo;
 }
+
 
 .boton_set{
     @extend .btn-primary;
@@ -13,6 +18,15 @@
         color: #fff;
     }
 }
+
+.boton_set:hover{
+    background-color: #FADF63; 
+    .nombre_set{
+        color: #212227;
+    }
+
+}
+
     
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
