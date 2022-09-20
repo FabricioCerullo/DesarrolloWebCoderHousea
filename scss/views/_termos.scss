@@ -29,15 +29,15 @@
 
 
 
-@media screen and (min-width: 1199px) and (max-width: 1700px){
+@media screen and (min-width: 1200px) and (max-width: 1700px){
     #portada_pagTermos{
         .titulo_fondo{
+            width:1200px;
+            height:300px;
             font-size: map-get($fuentes,n8);
             font-weight: bold;
             text-align: center;
             position: relative;
-            right:350px;
-
         }
         background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
         width: 100%;
@@ -53,8 +53,8 @@
     }
 
     .text_termo{
-        max-width:300px;
-        max-height: 100px;
+        max-width:700px;
+        max-height: 200px;
         font-size: 15px;
     }
 
@@ -73,12 +73,14 @@
 @media screen and (min-width: 768px) and (max-width: 1199px){
     #portada_pagTermos{
         .titulo_fondo{
+            width: 1000px;
+            height:200px;
             font-size: map-get($fuentes,n7);
             font-weight: bold;
             text-align: center;
             position: relative;
-            top: 130px;
-            right: 350px;
+            top: 60px;
+            right: 200px;
         }
         background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
         width: 100%;
@@ -86,7 +88,7 @@
         border-radius: 20px;
         border: 2px solid;
     }
-
+    
 
     .img_termos{
         max-width:200px;
@@ -112,15 +114,15 @@
 }
 
 
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width:320px) and (max-width:767px){
     #portada_pagTermos{
         .titulo_fondo{
-            font-size: map-get($fuentes,n5);
+            width:320px;
+            height:300px;
+            font-size: map-get($fuentes,n2);
             font-weight: bold;
             text-align: center;
             position: relative;
-            top: 120px;
-
         }
         background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
         width: 100%;
