@@ -4,7 +4,7 @@
 #portada_pagCombos{
     .titulo_fondo{
         @extend .modelo_titulo;
-        @extend .box_tamaño;
+       @extend .box_tamaño;
     }
     background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
     @extend .modelo_fondo;
@@ -29,71 +29,114 @@
 
     
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 1200px) and (max-width: 1700px){
     #portada_pagCombos{
-        background-image: url(http://d3ugyf2ht6aenh.cloudfront.net/stores/157/335/products/20200406_1520481-4a80313ae1360a0a4615878364452126-640-0.jpg);
-        background-size: cover;
-        padding-bottom: 300px;
-    }
-    
-    .img_set{
-        max-width:200px;
-        max-height: 200px;
-    }
+        .titulo_fondo{
+            width:1200px;
+            height:300px;
+            font-size: map-get($fuentes,n7);
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            top: 130px;
+            right:200px;
 
-    .text_set{
-        max-width:500px;
-        max-height: 300px;
+        }
+        background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
+        width: 100%;
+        height : 100%;
+        border-radius: 20px;
+        border: 2px solid;
     }
-
-}
-
-@media screen and (max-width: 768px) {
-    #portada_pagTermos{
-        background-image: url(http://d3ugyf2ht6aenh.cloudfront.net/stores/157/335/products/20200406_1520481-4a80313ae1360a0a4615878364452126-640-0.jpg);
-        background-size: cover;
-        padding-bottom: 200px;
-    }
-    
-    .title__pagMates{
-        @include title_pag;
-    }
-
-    .img_set{
-        max-width:150px;
-        max-height: 150px;
-    }
-    .text_set{
-        max-width:300px;
-        max-height: 400px;
-    }
-
-    .boton_set{
-        border-radius: 30px;
-    }
-}
-
-
-@media screen and (max-width:320px) {
-    #portada_pagTermos{
-        background-image: url(http://d3ugyf2ht6aenh.cloudfront.net/stores/157/335/products/20200406_1520481-4a80313ae1360a0a4615878364452126-640-0.jpg);
-        background-size: cover;
-        padding-bottom: 100px;
-    }
-
-    .title__pagMates{
-        @include title_pag;
-    }
-    
     .img_set{
         max-width:120px;
         max-height: 120px;
     }
 
     .text_set{
-        max-width:200px;
-        max-height: 200px;
-        font-size: 10px;
+        width:700px;
+        height: 100px;
+        font-size: 15px;
+    }
+
+    
+    .nombre_set{
+        font-size: map-get($fuentes,n1);
+    }
+  
+
+    .boton_set{
+        border-radius: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    #portada_pagCombos{
+        .titulo_fondo{
+            height: 200px;
+            font-size: map-get($fuentes,n5);
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            top: 130px;
+            right:350px;
+
+        }
+        background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
+        width: 100%;
+        height : 100%;
+        border-radius: 20px;
+        border: 2px solid;
+    }
+    .img_set{
+        max-width:120px;
+        max-height: 120px;
+    }
+
+    .text_set{
+        width:700px;
+        height: 100px;
+        font-size: 15px;
+    }
+
+    
+    .nombre_set{
+        font-size: map-get($fuentes,n1);
+    }
+  
+
+    .boton_set{
+        border-radius: 30px;
+}
+
+
+@media screen and (min-width:320px) and (max-width:767px){
+    #portada_pagCombos{
+        .titulo_fondo{
+            width:320px;
+            height:00px;
+            font-size: map-get($fuentes,n2);
+            font-weight: bold;
+
+            position: relative;
+            right:500px;
+
+        }
+        background-image: url(../imagenes_removed_fondo/fondoPr_auto_x1.jpg);
+        width: 100%;
+        height : 100%;
+        border-radius: 20px;
+        border: 2px solid;
+    }
+    .img_set{
+        max-width:120px;
+        max-height: 120px;
+    }
+
+    .text_set{
+        width:300px;
+        height: 100px;
+        font-size: 15px;
     }
 
     
@@ -106,4 +149,5 @@
         border-radius: 30px;
     }
 
+}
 }
