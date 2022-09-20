@@ -30,10 +30,9 @@
 
 }
 
-@media screen and (min-width: 1199px) and (max-width: 1700px){
+@media screen and (min-width: 1200px) and (max-width: 1700px){
     #portada_pagMates{
         .titulo_fondo{  
-
             font-size: map-get($fuentes,n8);
             font-weight: bold;
             text-align: center;
@@ -104,7 +103,7 @@
     }
 }
 
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width:320px) and (max-width:767px){
     #portada_pagMates{
         .titulo_fondo{
             width:250px;
