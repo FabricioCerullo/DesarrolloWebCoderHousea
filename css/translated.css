@@ -445,7 +445,7 @@ element.style {
     font-size: 15px; }
   .text_mate {
     max-width: 700px;
-    max-height: 100px;
+    max-height: 1000px;
     font-size: 15px; } }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -470,7 +470,7 @@ element.style {
     font-size: 15px; }
   .text_mate {
     max-width: 700px;
-    max-height: 100px;
+    max-height: 900px;
     font-size: 15px; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -495,7 +495,7 @@ element.style {
     font-size: 15px; }
   .text_mate {
     max-width: 300px;
-    max-height: 200px;
+    max-height: 1000px;
     font-size: 15px; } }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -532,7 +532,7 @@ element.style {
     max-height: 200px; }
   .text_termo {
     max-width: 700px;
-    max-height: 200px;
+    max-height: 1000px;
     font-size: 15px; }
   .nombre_termo {
     font-size: 10px; }
@@ -560,7 +560,7 @@ element.style {
     max-height: 200px; }
   .text_termo {
     width: 700px;
-    max-height: 200px;
+    max-height: 1000px;
     font-size: 15px; }
   .nombre_termo {
     font-size: 15px; }
@@ -586,7 +586,7 @@ element.style {
     max-height: 200px; }
   .text_termo {
     max-width: 300px;
-    max-height: 200px;
+    max-height: 1000px;
     font-size: 15px; }
   .nombre_termo {
     font-size: 10px; }
